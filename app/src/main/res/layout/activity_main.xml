@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/aValue"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    //Judul "Masukan Warna Segitiga"
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Masukan Warna Segitiga"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"></TextView>
+    //Baris Pertama Untuk Inputan r (red) dan g (green)
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        //Memberikan Tulisan r (red)
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="r : "
+            android:textColor="@color/black"
+            android:textSize="24sp">
+        </TextView>
+        //Kolom Inputan nilai r (red)
+        <EditText
+            android:id="@+id/rInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="100dp"
+            android:inputType="numberDecimal|numberSigned"
+            android:textAlignment="textEnd"
+            android:textSize="24sp"></EditText>
+        //Memberikan Tulisan g (green)
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="30dp"
+            android:text="g : "
+            android:textColor="@color/black"
+            android:textSize="24sp"></TextView>
+        //Kolom Inputan nilai g (green)
+        <EditText
+            android:id="@+id/gInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="100dp"
+            android:inputType="numberDecimal|numberSigned"
+            android:textAlignment="textEnd"
+            android:textSize="24sp"></EditText>
+    </LinearLayout>
+    //Baris Kedua Untuk Inputan r (red) dan g (green)
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        //Memberikan Tulisan b (blue)
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" b: "
+            android:textColor="@color/black"
+            android:textSize="24sp"></TextView>
+        //Kolom Inputan nilai b (blue)
+        <EditText
+            android:id="@+id/bInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="100dp"
+            android:inputType="numberDecimal|numberSigned"
+            android:textAlignment="textEnd"
+            android:textSize="24sp"></EditText>
+        //Memberikan Tulisan a (alpha)
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="30dp"
+            android:text="a : "
+            android:textColor="@color/black"
+            android:textSize="24sp"></TextView>
+        //Kolom Inputan nilai a (alpha)
+        <EditText
+            android:id="@+id/aInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="100dp"
+            android:inputType="numberDecimal|numberSigned"
+            android:textAlignment="textEnd"
+            android:textSize="24sp"></EditText>
+    </LinearLayout>
+    //Judul "Memberikan Ukuran Segitiga"
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Ukuran Segitiga"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"></TextView>
+    //Baris Pertama Sisi 1
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        //Memberikan Tulisan Titik Atas
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Titik Atas : "
+            android:textColor="@color/black"
+            android:textSize="24sp">
+        </TextView>
+        //Kolom Inputan nilai Titik Atas
+        <EditText
+            android:id="@+id/InputA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="100dp"
+            android:inputType="numberDecimal|numberSigned"
+            android:textAlignment="textEnd"
+            android:textSize="24sp"></EditText>
+    </LinearLayout>
+    //Baris Kedua Sisi 2
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        //Memberikan Tulisan Titik Kiri
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Titik Kiri : "
+            android:textColor="@color/black"
+            android:textSize="24sp">
+        </TextView>
+        //Kolom Inputan nilai Titik Kiri
+        <EditText
+            android:id="@+id/InputB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="100dp"
+            android:inputType="numberDecimal|numberSigned"
+            android:textAlignment="textEnd"
+            android:textSize="24sp"></EditText>
+    </LinearLayout>
+    //Baris Ketiga Sisi 3
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        //Memberikan Tulisan Titik Kanan
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Titik Kanan : "
+            android:textColor="@color/black"
+            android:textSize="24sp">
+        </TextView>
+        ///Kolom Inputan Nilai Titik Kanan
+        <EditText
+            android:id="@+id/InputC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="100dp"
+            android:inputType="numberDecimal|numberSigned"
+            android:textAlignment="textEnd"
+            android:textSize="24sp"></EditText>
+    </LinearLayout>
+    //Tombol Submit
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Submit"></Button>
+
+</LinearLayout>
