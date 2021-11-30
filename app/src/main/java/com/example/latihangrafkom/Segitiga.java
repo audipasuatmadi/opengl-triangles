@@ -28,13 +28,13 @@ public class Segitiga {
     // number of coordinates per vertex in this array
     static final int COORDS_PER_VERTEX = 3;
     static float koordinat[] = {   // in counterclockwise order:
-            0.0f,  MainActivity.getTop(), 0.0f, // top
-            MainActivity.getLeft(), -0.1811004243f, 0.0f, // bottom left
-            MainActivity.getRight(), -0.1911004243f, 0.0f  // bottom right
+            0.0f,  0.7f, 0.0f, // top
+            -1, -0.3f, 0.0f, // bottom left
+            1, -0.3f, 0.0f  // bottom right
     };
 
     // Set color with red, green, blue and alpha (opacity) values
-    float color[] = {  MainActivity.getR() , MainActivity.getG(), MainActivity.getB(), MainActivity.getA()};
+//    float color[] = {  MainActivity.getR() , MainActivity.getG(), MainActivity.getB(), MainActivity.getA()};
 
     public Segitiga() {
         // initialize vertex byte buffer for shape coordinates
@@ -91,6 +91,16 @@ public class Segitiga {
 
         // get handle to fragment shader's vColor member
         colorHandle = GLES20.glGetUniformLocation(mProgram, "vColor");
+
+        String selectedColor = MainActivity.getSelectedColor();
+        float color[];
+        if (selectedColor.equals("RED")) {
+            color = new float[]{255, 0, 0, 1};
+        } else if (selectedColor.equals("GREEN")) {
+            color = new float[]{0, 255, 0, 1};
+        } else {
+            color = new float[]{0, 0, 255, 1};
+        }
 
         // Set color for drawing the triangle
         GLES20.glUniform4fv(colorHandle, 1, color, 0);

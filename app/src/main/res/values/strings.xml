@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">LatihanGrafkom</string>
+    <string name="label_app_name">Triangle Expert</string>
+    <string name="label_app_creators">I Gusti Agung Gde Abhirama Adnyana<br/>Anak Agung Gde Krishna Aryawan<br/>Gde Agung Mandala Bendesa</string>
+    <string name="label_button_start">Start</string>
+    <string name="label_title_colour">Colour</string>
 </resources>
